@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navContainer{
+    background:#00A8FF;
+    color: #fff;
+}
+.navLeft{
+    float: left;
+}
+.navLeft .logo{
+    width: 200px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 32px;
+}
+.navRight{
+    float: right;
+}
+
+.navRight ul li{
+    float: left;
+    list-style: none;
+    margin: 30px 30px;
+    cursor: pointer;
+}
+.loadCardbg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .1;
+    height: 100%;
+    display: none;
+}
+
+.loadIcon {
+    position: relative;
+    height: 400px;
+}
+
+.loadIcon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    border: 10px dashed #ccc;
+    padding: 20px;
+}
+
+
+.loadCard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4885EA;
+    width: 500px;
+    height: 300px;
+    display: none;
+}
+.loadCard span{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.loadCard .chooseFile{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.loadCard .chooseURL{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.loadCard  .beginUpload{
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    background-color: #F56C6C;
+    border: 1px solid #F56C6C;
+}
+
+.loadCard .chooseFile:hover,
+.loadCard .chooseURL:hover{
+    background-color: hsla(0, 0%, 100%, .15);
+}
+.loadCard .closeIcon{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
